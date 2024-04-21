@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div id="menuScreen" class="">
+    <div id="menuBackground">
+      <h2 id="title">Learn the Compass</h1>
+      <h3 id="author">D/C Mendoza</h3>
+      <button id="playBtn">Play</button>
+    </div>
+  </div>
+  
+  <div id="gameModeSelector">
+    <button id='prevBtn'><</button>
+    <h3 id="modeInd">Learn</h3>
+    <button id="nextBtn">></button>
+  </div>
+  
+  <div id="scoreDisplay" class="isHidden">
+    <div id="corrDiv">
+      <p id="correct">Correct</p>
+      <p id="corrCount">0</p>
+    </div>
+    <div id="mistDiv">
+      <p id="mistakes">Mistakes</p>
+      <p id="mistCount">0</p>
+    </div>
+  </div>
+  
+  <div id="typeSection" class="isHidden">
+    <div id="typeBox">
+      
+    </div>
+    <div id="typePad">
+      <div id="secA">
+        <button id="nKey" class="padKey">NORTH</button>
+        <button id="sKey" class="padKey">SOUTH</button>
+      </div>
+      <div id="secB">
+        <button id="eKey" class="padKey">EAST</button>
+        <button id="wKey" class="padKey">WEST</button>
+      </div>
+      <div id="secC">
+        <button id="byKey" class="padKey">BY</button>
+      </div>
+      <div id="secD"> 
+        <button id="clearKey" class="padKey">CLEAR</button>
+        <button id="enterKey" class="padKey">ENTER</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="compassRoseCont">
+  
+    <div id="compassRose">
+      <div id="midBtn">
+        <h3 id="abbrev">Tap the Arrows!</h3>
+        <p id="name"></p>
+        <p id="deg"></p>
+        <p id="point" class="isHidden">0 point</p>
+      </div>
+      
+      
+      <div id="N" class="arrow"></div>
+      <div id="E" class="arrow"></div>
+      <div id="S" class="arrow"></div>
+      <div id="W" class="arrow"></div>
+      
+      <div id="NE" class="arrow"></div>
+      <div id="SE" class="arrow"></div>
+      <div id="SW" class="arrow"></div>
+      <div id="NW" class="arrow"></div>
+      
+      <div id="NNE" class="arrow"></div>
+      <div id="ENE" class="arrow"></div>
+      <div id="ESE" class="arrow"></div>
+      <div id="SSE" class="arrow"></div>
+      <div id="SSW" class="arrow"></div>
+      <div id="WSW" class="arrow"></div>
+      <div id="WNW" class="arrow"></div>
+      <div id="NNW" class="arrow"></div>
+      
+      <div id="NbE" class="arrow"></div>
+      <div id="NEbN" class="arrow"></div>
+      <div id="NEbE" class="arrow"></div>
+      <div id="EbN" class="arrow"></div>
+      
+      <div id="EbS" class="arrow"></div>
+      <div id="SEbE" class="arrow"></div>
+      <div id="SEbS" class="arrow"></div>
+      <div id="SbE" class="arrow"></div>
+      
+      <div id="SbW" class="arrow"></div>
+      <div id="SWbS" class="arrow"></div>
+      <div id="SWbW" class="arrow"></div>
+      <div id="WbS" class="arrow"></div>
+      
+      <div id="WbN" class="arrow"></div>
+      <div id="NWbW" class="arrow"></div>
+      <div id="NWbN" class="arrow"></div>
+      <div id="NbW" class="arrow"></div>
+      
+      
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
