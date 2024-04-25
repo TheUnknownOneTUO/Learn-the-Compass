@@ -25,29 +25,79 @@ p {
 
 #menuBackground { 
   display: flex; 
+  position: absolute;
   height: 100%; 
-  width: 100%;
+  width: 100%; 
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
+  text-align: center;
   color: white;
 } 
 
 #title {
-  margin: 0.1em;
+  margin-bottom: 0.5em;
 } 
 
-#author {
-  margin: 0.3em;
+#developer { 
+  margin-top: 2em; 
 }
 
 #playBtn {
   font-size: 3em; 
   font-family: "Courier New"; 
   color: white;
-  Background: darkgreen; 
+  Background: black; 
   border: 3px groove white; 
-  border-radius: 0.2em;
+  border-radius: 0.2em; 
+}
+
+#timeUiDiv, #gameOverUiDiv {
+  display: flex; 
+  position: absolute; 
+  height: 100%;
+  width: 100%; 
+  background-color: rgba(50, 50, 50, 0.75); 
+  justify-content: center; 
+  align-items: center;
+  z-index: 100;
+} 
+
+#timeUi, #gameOverUi {
+  display: flex; 
+  flex-direction: column; 
+  position: relative;
+  background: black; 
+  height: 70%; 
+  width: 80%; 
+  justify-content: center; 
+  align-items: center; 
+  border: 3px ridge white;
+  border-radius: 1em;
+} 
+
+#timeUi>p {
+  color: white; 
+  font-size: 2em;
+}
+
+#timeUi>button, #gameOverUi>button {
+  font-size: 1.5em; 
+  width: 80%; 
+  margin: 0.2em; 
+  padding: 0.2em;
+}
+
+#gameOverUi {
+  color: white;
+}
+
+#gameOverCorr {
+  color: lime;
+}
+
+#gameOverMist {
+  color: red;
 }
 
 #gameModeSelector {
@@ -84,13 +134,37 @@ p {
 #modeInd { 
   display: flex; 
   align-items: center; 
-  justify-content: center;
+  justify-content: center; 
+  text-align: center;
   color: limegreen; 
   font-family: "Courier New"; 
   font-size: 1em; 
   padding: 0; 
   margin: 0;
 }
+
+/*---------*/
+
+#additionalInfoDiv {
+  display: flex; 
+  position: absolute; 
+  background: black; 
+  font-family: "Courier New";
+  bottom: 4em; 
+  padding: 0.5em 0 0.5em 0; 
+  box-sizing: border-box;
+  width: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  color: white; 
+}
+
+#additionalInfo { 
+  margin: 0;
+}
+
+/*---------*/
 
 #scoreDisplay {
   position: absolute; 
@@ -191,6 +265,110 @@ p {
 #enterKey {
   background: seagreen;
 }
+/*---------*/
+
+#degreeScrollPanel {
+  position: absolute; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  box-sizing: border-box; 
+  bottom: 5%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  background: black; 
+  border: 3px ridge white;
+  border-radius: 1em;
+  height: 18%; 
+  width: 90%; 
+}
+
+#panelCont {
+  display: flex; 
+  height: 70%; 
+  width: 100%; 
+  color: lime; 
+  justify-content: center; 
+  padding: 0.3em 0 0.3em 0; 
+  box-sizing: border-box; 
+} 
+
+#degScrollBtn {
+  display: flex; 
+  height: 30%; 
+  width: 100%; 
+  justify-content: center; 
+  padding: 0.3em 0 0.3em 0; 
+  box-sizing: border-box; 
+} 
+
+#degScrollReset, #degScrollEnter {
+  margin: 0em 1em 0.1em 0em; 
+  box-sizing: border-box; 
+  background: darkGray; 
+  height: 100%; 
+  width: 6em;
+  
+}
+
+#wholeNum, #deciNum {
+  display: flex; 
+}
+
+#deciPoint {
+  font-size: 2em; 
+}
+
+#firstDigit, #secondDigit, #thirdDigit, #firstDeci, #secondDeci {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  overflow: auto; 
+  background: dimgray; 
+  font-size: 2em;
+  margin: 0 0.1em 0 0.1em;
+  box-sizing: border-box; 
+  width: 1em; 
+  padding-bottom: 0.5em; 
+  scroll-snap-type: y mandatory; 
+}
+
+.digit {
+  scroll-snap-align: start; 
+  scroll-snap-stop: always; 
+}
+
+#optionsDiv {
+  position: absolute; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  /*justify-content: center;*/
+  padding: 0.4em;
+  bottom: 5%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  background: black; 
+  border: 3px ridge white;
+  border-radius: 1em;
+  height: 15%; 
+  width: 90%; 
+  overflow: auto; 
+  box-sizing: border-box !important;
+}
+
+#optionsDiv>button { 
+  background: gray;
+  width: 100%;
+  color: white; 
+  font-family: "Courier New";
+  margin: 0.3em 0 0 0;
+  padding: 0.3em; 
+  font-size: 0.75em; 
+  box-sizing: border-box !important;
+}
+
 /*---------*/
 
 #compassRoseCont {
@@ -460,3 +638,10 @@ p {
   transform: rotate(348.75deg)
 }
 
+#N, #E, #S, #W {
+  border: solid indianred;
+} 
+
+#NE, #SE, #SW, #NW {
+  border: solid darkorange;
+}

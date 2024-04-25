@@ -18,9 +18,30 @@
   
   <div id="menuScreen" class="">
     <div id="menuBackground">
-      <h2 id="title">Learn the Compass</h1>
-      <h3 id="author">D/C Mendoza</h3>
+      <h1 id="title">Learn the Compass</h1>
       <button id="playBtn">Play</button>
+      <h3 id="developer">by D/C Mendoza</h3>
+    </div>
+  </div>
+  
+  <div id="timeUiDiv" class="isHidden">
+    <div id="timeUi"> 
+      <p>Choose Time</p>
+      <button id="noTimeBtn">No Time</button>
+      <button id="sec30Btn">30 Seconds</button>
+      <button id="min1Btn">1 Minute</button>
+      <button id="min2Btn">2 Minutes</button>
+      <button id="min3Btn">3 Minutes</button>
+    </div>
+  </div>
+  
+  <div id="gameOverUiDiv" class="isHidden">
+    <div id="gameOverUi">
+      <h1>Game Over!</h1>
+      <h2 id="gameOverTime"></h2>
+      <div id="gameOverCorr"></div>
+      <div id="gameOverMist"></div>
+      <button id="returnBtn" class="isHidden">Return</button>
     </div>
   </div>
   
@@ -28,6 +49,10 @@
     <button id='prevBtn'><</button>
     <h3 id="modeInd">Learn</h3>
     <button id="nextBtn">></button>
+  </div>
+  
+  <div id="additionalInfoDiv" class="">
+    <div id="additionalInfo">Relative Bearing</div>
   </div>
   
   <div id="scoreDisplay" class="isHidden">
@@ -62,6 +87,81 @@
         <button id="enterKey" class="padKey">ENTER</button>
       </div>
     </div>
+  </div>
+  
+  <div id="degreeScrollPanel" class="isHidden">
+    <div id="panelCont">
+    <div id="wholeNum">
+      <div id="firstDigit">
+        <div id="f0" class="digit">0</div>
+        <div id="f1" class="digit">1</div>
+        <div id="f2" class="digit">2</div>
+        <div id="f3" class="digit">3</div>
+      </div>
+      <div id="secondDigit">
+        <div id="s0" class="digit">0</div>
+        <div id="s1" class="digit">1</div>
+        <div id="s2" class="digit">2</div>
+        <div id="s3" class="digit">3</div>
+        <div id="s4" class="digit">4</div>
+        <div id="s5" class="digit">5</div>
+        <div id="s6" class="digit">6</div>
+        <div id="s7" class="digit">7</div>
+        <div id="s8" class="digit">8</div>
+        <div id="s9" class="digit">9</div>
+      </div>
+      <div id="thirdDigit">
+        <div id="t0" class="digit">0</div>
+        <div id="t1" class="digit">1</div>
+        <div id="t2" class="digit">2</div>
+        <div id="t3" class="digit">3</div>
+        <div id="t4" class="digit">4</div>
+        <div id="t5" class="digit">5</div>
+        <div id="t6" class="digit">6</div>
+        <div id="t7" class="digit">7</div>
+        <div id="t8" class="digit">8</div>
+        <div id="t9" class="digit">9</div>
+      </div>
+    </div>
+    <div id="deciPoint">.</div>
+    <div id="deciNum">
+      <div id="firstDeci">
+        <div id="fd0" class="digit">0</div>
+        <div id="fd1" class="digit">1</div>
+        <div id="fd2" class="digit">2</div>
+        <div id="fd3" class="digit">3</div>
+        <div id="fd4" class="digit">4</div>
+        <div id="fd5" class="digit">5</div>
+        <div id="fd6" class="digit">6</div>
+        <div id="fd7" class="digit">7</div>
+        <div id="fd8" class="digit">8</div>
+        <div id="fd9" class="digit">9</div>
+      </div>
+      <div id="secondDeci">
+        <div id="sd0" class="digit">0</div>
+        <div id="sd1" class="digit">1</div>
+        <div id="sd2" class="digit">2</div>
+        <div id="sd3" class="digit">3</div>
+        <div id="sd4" class="digit">4</div>
+        <div id="sd5" class="digit">5</div>
+        <div id="sd6" class="digit">6</div>
+        <div id="sd7" class="digit">7</div>
+        <div id="sd8" class="digit">8</div>
+        <div id="sd9" class="digit">9</div>
+      </div>
+    </div>
+    </div>
+    <div id="degScrollBtn" class="">
+      <button id="degScrollReset">Reset</button>
+      <button id="degScrollEnter">Enter</button>
+    </div>
+  </div>
+  
+  <div id="optionsDiv" class="isHidden">
+    <button id="option1">Option 1</button>
+    <button id="option2">Option 2</button>
+    <button id="option3">Option 3</button>
+    <button id="option4">Option 4</button>
   </div>
   
   <div id="compassRoseCont">
